@@ -86,8 +86,8 @@ function AppintmentHistory(args) {
                 <tr>
                   <th>Id</th>
                   <th>Name</th>
-                  <th>Appintment Date</th>
-                  <th>Appintment Time</th>
+                  <th>Appointment Date</th>
+                  <th>Appointment Time</th>
                   <th>Symptoms</th>
                   <th>Cancel Appointment</th>
                 </tr>

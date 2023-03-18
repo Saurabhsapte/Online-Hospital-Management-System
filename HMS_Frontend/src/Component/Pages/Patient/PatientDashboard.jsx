@@ -14,7 +14,7 @@ export default function PatientDashboard() {
           <VerticalNavbar />
         </Col>
         <Col sm={{ size: 6, offset: 1 }}>
-          <h1>Dashboard</h1>
+          <h1>Welcome Patient</h1>
         </Col>
       </Row>
     </Base>

@@ -32,12 +32,12 @@ function VerticalNavbar() {
 
         <NavItem>
           <NavLink tag={ReactLink} to="/user/patient/appointment">
-            Apponintment
+            Book Appointment
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink tag={ReactLink} to="/user/patient/appoHistory">
-            Appintment History
+          Appointment History
           </NavLink>
         </NavItem>
         <NavItem active>

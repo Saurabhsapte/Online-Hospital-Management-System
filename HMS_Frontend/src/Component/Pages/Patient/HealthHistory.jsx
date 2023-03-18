@@ -69,7 +69,7 @@ function HealthHistory(args) {
                 <tr>
                   <th>Id</th>
                   <th>Name</th>
-                  <th>Appintment Date and Time</th>
+                  <th>Appointment Date and Time</th>
                   <th>Symptoms</th>
                   <th>Diseases</th>
                   <th>AdmitDate</th>

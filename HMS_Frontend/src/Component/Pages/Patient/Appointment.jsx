@@ -84,7 +84,7 @@ function Appointment() {
             <Card outline color="dark">
               <CardHeader>
                 <h1>Welcome Patient</h1>
-                <h3>Book Appintment</h3>
+                <h3>Book Appointment</h3>
               </CardHeader>
               <CardBody>
                 <Form onSubmit={submitForm}>
