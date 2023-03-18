@@ -1,0 +1,9 @@
+Main Project - 9091 (HMS-SERVICE)
+
+Resource Api - 9092 (RESOURCE-SERVICE)
+
+Eureka server - 8761
+
+Api Gateway - 9090 (API-GATEWAY)
+
+config-server - 9093

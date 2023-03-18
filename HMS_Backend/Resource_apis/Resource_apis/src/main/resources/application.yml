@@ -1,0 +1,21 @@
+server:
+  port: 9092
+
+spring:
+  application:
+    name: RESOURCE-SERVICE
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: hospital_management_resource_service
+#  config:
+#    import: optional:configserver:http://localhost:9093
+    
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://13.234.121.240:8761/eureka

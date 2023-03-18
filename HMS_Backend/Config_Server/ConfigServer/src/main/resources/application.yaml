@@ -1,0 +1,13 @@
+server:
+  port: 9093
+
+spring:
+  application:
+    name: CONFIG-SERVER
+    
+  cloud:
+    config:
+      server:
+        git: 
+          uri: https://gitlab.com/project_group_d6/microservice-configuration
+          clone-on-start: true

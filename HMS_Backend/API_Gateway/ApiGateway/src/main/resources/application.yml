@@ -1,0 +1,34 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway: 
+      routes:
+      - id: HMS-SERVICE
+        uri: http://3.111.140.67:9091
+        predicates:
+        - Path=/api/v1/auth/**,/api/appointment/**,/api/users/**,/api/receptionist/**,/api/user/**,/api/address/**,/api/employee/**,/api/patient/**,/api/doctor/**,/api/doctors/**,/api/patients/**,/api/healthhistory/**,/api/medicine/**,/api/ward/**,/api/wards/**
+      - id: RESOURCE-SERVICE
+        uri: http://13.127.82.122:9092
+        predicates:
+        - Path=/api/resources/**
+      default-filters:
+      - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://13.234.121.240:8761/eureka
+      

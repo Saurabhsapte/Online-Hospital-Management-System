@@ -1,0 +1,30 @@
+server:
+  port: 9091
+  
+spring:
+  application:
+    name: HMS-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/hospital_management_backend?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: Saurabh@8904
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+#  profiles:
+#    active: prod
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://13.234.121.240:8761/eureka
