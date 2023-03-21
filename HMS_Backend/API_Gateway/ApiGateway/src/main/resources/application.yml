@@ -7,11 +7,11 @@ spring:
     gateway: 
       routes:
       - id: HMS-SERVICE
-        uri: http://3.111.140.67:9091
+        uri: lb://HMS-SERVICE
         predicates:
         - Path=/api/v1/auth/**,/api/appointment/**,/api/users/**,/api/receptionist/**,/api/user/**,/api/address/**,/api/employee/**,/api/patient/**,/api/doctor/**,/api/doctors/**,/api/patients/**,/api/healthhistory/**,/api/medicine/**,/api/ward/**,/api/wards/**
       - id: RESOURCE-SERVICE
-        uri: http://13.127.82.122:9092
+        uri: lb://RESOURCE-SERVICE
         predicates:
         - Path=/api/resources/**
       default-filters:
